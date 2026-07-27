@@ -39,10 +39,10 @@ print("=" * 50)
 print("Welcome to the prime number checking application !")
 print("=" * 50)
 
-number = int(input("Enter a number "))
+number = int(input("Enter a number: "))
 def check_prime(number):
     #Numbers less than 2 are not prime
-    if number < 2 or type(number) != int:
+    if number < 2:
         return f"{number} is NOT a prime number."
     
     #Checking for divisors less than the number 
