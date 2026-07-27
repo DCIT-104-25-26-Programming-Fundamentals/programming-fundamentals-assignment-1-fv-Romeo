@@ -90,3 +90,35 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+print("=" * 42)
+print("Welcome to the Student Record Management System")
+print("=" * 42)
+
+
+students = []
+
+
+def add_student(students):
+
+    name = input("Student name: ")
+    student_id = int(input("Student ID: "))
+
+    number_of_scores = int(input("How many scores? "))
+
+    scores = []
+
+    for i in range(number_of_scores):
+        score = int(input(f"Enter score {i + 1}: "))
+        scores.append(score)
+
+
+    student = {
+        "name": name,
+        "id": student_id,
+        "scores": scores
+    }
+
+
+    students.append(student)
+
+    print(f'Student "{name}" added successfully.')
