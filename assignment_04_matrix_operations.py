@@ -64,3 +64,13 @@ print("=" * 42)
 print("Welcome to the Matrix Operations Calculator")
 print("=" * 42)
 
+def create_matrix(rows, columns):
+    matrix = []
+    for i in range(rows):
+        row_values = input(f"Enter row {i+1}: ").split()
+        row = []
+        for j in range(columns):
+            row.append(int(row_values[j]))
+        matrix.append(row)
+
+    return matrix
