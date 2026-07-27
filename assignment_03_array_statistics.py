@@ -59,4 +59,12 @@ def sum_of_array (values):
 def average_of_array (values):
     avg = sum_of_array(values) / len(values)
     return avg
-print(average_of_array(values))
+
+def maximum_of_array(values):
+    maximum = values[0]
+
+    for i in range(len(values)):
+        if values[i] > maximum:
+            maximum = values[i]
+
+    return maximum
