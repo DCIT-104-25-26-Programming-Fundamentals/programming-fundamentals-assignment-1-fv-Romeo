@@ -80,3 +80,55 @@ def display_matrix(matrix):
         for j in range(len(matrix[i])):
             print(f"{matrix[i][j]:4}", end=" ")
         print()
+
+def transpose_matrix(matrix):
+    transpose = []
+
+    rows = len(matrix)
+    columns = len(matrix[0])
+
+    for i in range(columns):
+        new_row = []
+
+        for j in range(rows):
+            new_row.append(matrix[j][i])
+
+        transpose.append(new_row)
+
+    return transpose
+
+def add_matrices(matrix_a, matrix_b):
+    result = []
+
+    for i in range(len(matrix_a)):
+        row = []
+
+        for j in range(len(matrix_a[i])):
+            row.append(matrix_a[i][j] + matrix_b[i][j])
+
+        result.append(row)
+
+    return result
+
+def multiply_matrices(matrix_a, matrix_b):
+    result = []
+
+    rows_a = len(matrix_a)
+    columns_a = len(matrix_a[0])
+    columns_b = len(matrix_b[0])
+
+
+    for i in range(rows_a):
+        row = []
+
+        for j in range(columns_b):
+            total = 0
+
+            for k in range(columns_a):
+                total += matrix_a[i][k] * matrix_b[k][j]
+
+            row.append(total)
+
+        result.append(row)
+
+    return result
