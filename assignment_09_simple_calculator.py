@@ -82,3 +82,26 @@ def addition(number1, number2):
 def subtraction(number1, number2):
     result = number1 - number2
     return result
+
+def multiplication(number1, number2):
+    result = number1 * number2
+    return result
+
+
+def division(number1, number2):
+
+    if number2 == 0:
+        return None
+
+    else:
+        result = number1 / number2
+        return round(result, 2)
+
+def modulus(number1, number2):
+    result = number1 % number2
+    return result
+
+
+def exponentiation(number1, number2):
+    result = number1 ** number2
+    return result    
