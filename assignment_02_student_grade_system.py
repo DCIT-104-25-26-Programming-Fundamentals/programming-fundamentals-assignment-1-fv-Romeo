@@ -50,3 +50,19 @@ print("Welcome to the Student Grade System")
 print("=" * 35)
 
 student_grade = int(input("Enter student score (0-100): "))
+
+def grade_checker (student_grade):
+    if student_grade < 0 or student_grade > 100:
+        return "Error: Score must be between 0 and 100."
+    elif 80 <= student_grade <= 100:
+        return "Grade: A"
+    elif 70 <= student_grade <= 79:
+        return "Grade: B"
+    elif 60 <= student_grade <= 69:
+        return "Grade: C"
+    elif 50 <= student_grade <= 59:
+        return "Grade: D"
+    else:
+        return "Grade: F"
+
+print(grade_checker(student_grade))    
