@@ -62,9 +62,16 @@ def average_of_array (values):
 
 def maximum_of_array(values):
     maximum = values[0]
-
     for i in range(len(values)):
         if values[i] > maximum:
             maximum = values[i]
 
     return maximum
+
+def minimum_of_array(values):
+    minimum = values[0]
+    for i in range(len(values)):
+        if values[i] < minimum:
+            minimum = values[i]
+
+    return minimum
