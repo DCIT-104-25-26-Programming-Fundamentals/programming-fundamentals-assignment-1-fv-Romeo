@@ -74,3 +74,9 @@ def create_matrix(rows, columns):
         matrix.append(row)
 
     return matrix
+
+def display_matrix(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            print(f"{matrix[i][j]:4}", end=" ")
+        print()
