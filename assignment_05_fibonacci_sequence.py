@@ -72,3 +72,40 @@ def display_sequence(fibonacci):
         print(fibonacci[i], end=" ")
 
     print()
+
+def check_fibonacci(number):
+    first_number = 0
+    second_number = 1
+
+    while first_number <= number:
+
+        if first_number == number:
+            return True
+
+        next_number = first_number + second_number
+        first_number = second_number
+        second_number = next_number
+
+    return False    
+
+print("\nPart A — Print Fibonacci Terms")
+
+terms = int(input("How many terms? "))
+
+if terms <= 0:
+    print("Error invalid input")
+
+else:
+    fibonacci = generate_fibonacci(terms)
+    display_sequence(fibonacci)
+
+
+print("\nPart B — Check Fibonacci Number")
+
+number = int(input("Enter a number to check: "))
+
+if check_fibonacci(number):
+    print(f"{number} is a Fibonacci number.")
+
+else:
+    print(f"{number} is NOT a Fibonacci number.")
