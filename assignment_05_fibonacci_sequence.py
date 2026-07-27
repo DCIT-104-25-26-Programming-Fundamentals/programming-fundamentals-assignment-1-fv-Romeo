@@ -52,3 +52,23 @@
 print("=" * 42)
 print("Welcome to the Fibonacci Sequence Generator")
 print("=" * 42)
+
+def generate_fibonacci(terms):
+    fibonacci = []
+    first_number = 0
+    second_number = 1
+    for i in range(terms):
+        fibonacci.append(first_number)
+        next_number = first_number + second_number
+        first_number = second_number
+        second_number = next_number
+
+    return fibonacci
+
+def display_sequence(fibonacci):
+    print("Fibonacci sequence:", end=" ")
+
+    for i in range(len(fibonacci)):
+        print(fibonacci[i], end=" ")
+
+    print()
