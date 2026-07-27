@@ -78,6 +78,7 @@ def multiple_tables(number):
 
         print("---------------------------")
 
+
 print("\nPart A — Single Table")
 
 number = int(input("Enter a number: "))
