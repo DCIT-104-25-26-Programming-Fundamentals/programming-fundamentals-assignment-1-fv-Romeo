@@ -45,3 +45,6 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+print("=" * 35)
+print("Welcome to the Student Grade System")
+print("=" * 35)
