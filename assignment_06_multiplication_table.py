@@ -65,3 +65,36 @@ def multiplication_table(number):
 
     for i in range(1, 13):
         print(f"{number}  x  {i}  =  {number * i}")
+
+
+#creates multiplication table from 1 to any number specified by the user
+def multiple_tables(number):
+    for i in range(1, number + 1):
+
+        print(f"Multiplication Table for {i}:")
+
+        for j in range(1, 13):
+            print(f"{i}  x  {j}  =  {i * j}")
+
+        print("---------------------------")
+
+print("\nPart A — Single Table")
+
+number = int(input("Enter a number: "))
+
+if number <= 0:
+    print("Error invalid input")
+
+else:
+    multiplication_table(number)
+
+
+print("\nPart B — Tables from 1 to N")
+
+number = int(input("Enter N: "))
+
+if number <= 0:
+    print("Error invalid input")
+
+else:
+    multiple_tables(number)                
