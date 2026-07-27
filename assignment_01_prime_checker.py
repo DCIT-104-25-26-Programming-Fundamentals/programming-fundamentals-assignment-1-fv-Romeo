@@ -35,3 +35,6 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+print("=" * 50)
+print("Welcome to the prime number checking application !")
+print("=" * 50)
