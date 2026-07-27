@@ -48,3 +48,5 @@
 print("=" * 35)
 print("Welcome to the Student Grade System")
 print("=" * 35)
+
+student_grade = int(input("Enter student score (0-100): "))
