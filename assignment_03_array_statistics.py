@@ -50,10 +50,13 @@ for i in range(array_size):
     values.append(current_value)
 
 
-def sum_array (values):
+def sum_of_array (values):
     total = 0
     for i in range(len(values)):
         total += values[i]
     return total    
-#print(sum)
-print(sum_array(values))
+
+def average_of_array (values):
+    avg = sum_of_array(values) / len(values)
+    return avg
+print(average_of_array(values))
