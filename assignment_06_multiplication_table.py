@@ -55,3 +55,13 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+print("=" * 42)
+print("Welcome to the Multiplication Table Generator")
+print("=" * 42)
+
+
+def multiplication_table(number):
+    print(f"Multiplication Table for {number}:")
+
+    for i in range(1, 13):
+        print(f"{number}  x  {i}  =  {number * i}")
