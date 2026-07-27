@@ -42,3 +42,10 @@
 print("=" * 42)
 print("Welcome to the Array Statistics Calculator")
 print("=" * 42)
+
+values = []
+array_size = int(input("How many numbers? "))
+for i in range(array_size):
+    current_value = int(input(f"Enter number {i+1}: "))
+    values.append(current_value)
+
