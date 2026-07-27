@@ -49,3 +49,6 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+print("=" * 42)
+print("Welcome to the Fibonacci Sequence Generator")
+print("=" * 42)
