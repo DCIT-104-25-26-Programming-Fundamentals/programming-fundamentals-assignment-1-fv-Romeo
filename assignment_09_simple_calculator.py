@@ -68,3 +68,17 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+
+print("=" * 42)
+print("Welcome to the Simple Calculator")
+print("=" * 42)
+
+
+def addition(number1, number2):
+    result = number1 + number2
+    return result
+
+
+def subtraction(number1, number2):
+    result = number1 - number2
+    return result
