@@ -131,3 +131,22 @@ def calculate_average(scores):
 
     return round(average, 2)    
 
+def display_students(students):
+    if len(students) == 0:
+        print("No students have been added.")
+
+    else:
+        print("-" * 50)
+        print("Name\t\tID\t\tScores\t\tAverage")
+        print("-" * 50)
+
+        for i in range(len(students)):
+
+            print(
+                f"{students[i]['name']}\t"
+                f"{students[i]['id']}\t"
+                f"{students[i]['scores']}\t"
+                f"{calculate_average(students[i]['scores'])}"
+            )
+
+        print("-" * 50)
