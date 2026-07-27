@@ -39,3 +39,6 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+print("=" * 42)
+print("Welcome to the Array Statistics Calculator")
+print("=" * 42)
