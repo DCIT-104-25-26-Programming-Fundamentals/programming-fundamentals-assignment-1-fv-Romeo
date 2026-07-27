@@ -49,3 +49,11 @@ for i in range(array_size):
     current_value = int(input(f"Enter number {i+1}: "))
     values.append(current_value)
 
+
+def sum_array (values):
+    total = 0
+    for i in range(len(values)):
+        total += values[i]
+    return total    
+#print(sum)
+print(sum_array(values))
