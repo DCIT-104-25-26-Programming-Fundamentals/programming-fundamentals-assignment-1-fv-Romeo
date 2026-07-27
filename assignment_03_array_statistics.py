@@ -45,6 +45,8 @@ print("=" * 42)
 
 values = []
 array_size = int(input("How many numbers? "))
+if array_size <= 0:
+    print("Error invalid input ")
 for i in range(array_size):
     current_value = int(input(f"Enter number {i+1}: "))
     values.append(current_value)
@@ -75,3 +77,9 @@ def minimum_of_array(values):
             minimum = values[i]
 
     return minimum
+
+print("Results:")
+print(f"Sum:   {(sum_of_array(values))}")
+print(f"Average: {(average_of_array(values))}")
+print(f"Maximum: {(maximum_of_array(values))}")
+print(f"Minimum: {(minimum_of_array(values))}")
